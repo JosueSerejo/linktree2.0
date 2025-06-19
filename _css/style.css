@@ -1,245 +1,374 @@
 /* -------------------------- GERAL -------------------------- */
-
 * {
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
-    font-family: sans-serif;
+    box-sizing: border-box; 
 }
 
 body {
-    background-image: url(/_img/3.png);
-
+    background-image: url(../_img/3.png); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto; 
+    overflow-x: hidden; 
 }
-
-/* -------------------------- GERAL -------------------------- */
-
-
-/* -------------------------- CONTEINER PRINCIPAL */
-
-main {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 2;
-    color: #eeeeee;
-    background-color: #2e362dad;
-    padding: 20px;
-    height: 600px;
-    width: 330px;
-    border-radius: 20px;
-
-}
-
-/* -------------------------- CONTEINER PRINCIPAL -------------------------- */
-
-
-/* --------------------------- AVATAR -------------------------- */
-
-.avatar {
-
-    background-color: #3d4c41;
-    padding: 10px;
-    border-radius: 20px;
-
-}
-
-
-.avatar img {
-    border: 3px solid #eeeeee;
-    float: left;
-}
-
-.avatar p {
-    font-size: 12px;
-}
-
-
-
-h1 {
-
-    padding-top: 4%;
-    text-shadow: 2px 1px 1px #7d857ce1;
-
-
-}
-
-
-p {
-    line-height: 3vh;
-
-
-}
-
-
-main img {
-    width: 70px;
-    border-radius: 20%;
-
-
-}
-
-
-/* -------------------------- AVATAR -------------------------- */
-
-/* -------------------------- SKILLS -------------------------- */
-
-h4 {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    text-shadow: 2px 2px 1px #3d4c41;
-
-
-}
-
-.skills {
-    background-color: #3d4c41;
-    padding: 10px;
-    border-radius: 20px;
-}
-
-.skills img {
-    width: 10%;
-
-}
-
-/* -------------------------- SKILLS -------------------------- */
-
-
-/* -------------------------- SOCIAL -------------------------- */
-
-.social {
-
-    margin-top: 10%;
-
-}
-
-
-
-.social a {
-    margin-right: 15px;
-    /* adiciona espaçamento à direita */
-}
-
-.social a:last-child {
-    margin-right: 0;
-    /* remove o espaçamento à direita do último elemento "a" */
-}
-
-
-#azul img {
-    width: 50px;
-    background-color: #eeeeee;
-    border: 3px solid #3d4c41;
-
-
-
-}
-
-#rosa img {
-    width: 50px;
-    background-color: #3d4c41;
-    border: 3px solid #eeeeee;
-
-}
-
-
-#azul img:hover {
-    background-color: #a4b9aa;
-    transition: 1s;
-}
-
-#rosa img:hover {
-    transition: 1s;
-    background-color: rgb(31, 37, 32);
-}
-
-
-/* -------------------------- SOCIAL -------------------------- */
-
-
-/* -------------------------- LINKS -------------------------- */
-
-.links {
-    width: 330px;
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .links a {
-    display: block;
-    height: 18px;
-    margin-bottom: 20px;
-    background-color: #f0f0f0d0;
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-decoration: none;
-    color: #333;
-    border-radius: 15px;
-  }
-  
-  .links a:hover {
-    background-color: #3d4c41bd;
-    color: #eeeeee;
-    transition: 1s;
-  }
-  
-  .links .publicado {
-    background-color: #3d4c41b2;
-    color: #eeeeee;
-  }
-  
-  .links .publicado:hover {
-    background-color: #eeeeeebd;
-    color: #3d4c41;
-    transition: 1s;
-  }
-
-
-
-/* -------------------------- LINKS -------------------------- */
 
 /* -------------------------- PARTICULAS DO FUNDO -------------------------- */
 #particles-js {
-    position: absolute;
+    position: fixed; 
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     z-index: 1;
-    /* Garante que as partículas estejam atrás dos botões */
+    background-color: rgba(0, 0, 0, 0.4); 
 }
 
-/* -------------------------- PARTICULAS DO FUNDO -------------------------- */
+/* -------------------------- CONTEINER PRINCIPAL -------------------------- */
+.main-container {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 2; 
+    color: #f0f0f0; 
+    background-color: rgba(46, 54, 45, 0.85); 
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); 
+    max-width: 450px; 
+    width: 90%; 
+    margin: 40px auto; 
+    min-height: 600px; 
+}
+
+.name-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espaço entre nome e subtítulo */
+  flex-wrap: wrap; /* quebra em telas pequenas */
+}
+
+.subtitle-inline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  color: #cccccc;
+  font-weight: 400;
+  margin: 0;
+}
 
 
 
+/* --------------------------- AVATAR (CABEÇALHO AJUSTADO COM FLEXBOX) -------------------------- */
+.avatar-section { 
+    background-color: #3d4c41; 
+    padding: 15px 20px; 
+    border-radius: 20px;
+    margin-bottom: 25px; 
+    width: 100%; 
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2); 
+    
+    display: flex; 
+    align-items: center; 
+    text-align: left; 
+}
+
+.profile-pic { 
+    width: 70px; 
+    height: 70px; 
+    border-radius: 20%; 
+    border: 3px solid #eeeeee; 
+    margin-right: 15px; 
+    transition: transform 0.3s ease; 
+}
+
+.profile-pic:hover {
+    transform: scale(1.05); 
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600; 
+    font-size: 1.9em; 
+    color: #ffffff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+    padding-top: 0; 
+    line-height: 1.2; 
+    margin-bottom: 2px; 
+}
+
+.subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em; 
+    color: #cccccc;
+    line-height: 1.2; 
+    margin-top: 0;
+}
+
+/* -------------------------- SEÇÕES (SKILLS, SOCIAL, LINKS) -------------------------- */
+.section-title { 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.3em; 
+    padding: -10px 0 15px 0; 
+    color: #ffffff;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    text-align: center; 
+}
+
+h4 {
+    padding-bottom: 10px;
+}
+
+/* -------------------------- SKILLS -------------------------- */
+.skills-grid { 
+    background-color: rgba(61, 76, 65, 0.7); 
+    padding: 20px; 
+    border-radius: 15px;
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.skills-grid img {
+    width: 60px; 
+    height: 60px;
+    object-fit: contain;
+    border-radius: 8px; 
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skills-grid img:hover {
+    transform: translateY(-5px) scale(1.1); 
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* -------------------------- SOCIAL -------------------------- */
+.social-links { 
+    display: flex;
+    justify-content: center; 
+    gap: 25px; 
+    margin-bottom: 30px; 
+    width: 100%;
+}
+
+.social-icon img { 
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%; 
+    object-fit: contain;
+    padding: 8px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Cores de fundo para os ícones sociais - mantidas */
+.social-icon.instagram img {
+    background-color: #e1306c; 
+    border: 2px solid #e1306c;
+}
+
+.social-icon.github img {
+    background-color: #333; 
+    border: 2px solid #333;
+}
+
+.social-icon.tiktok img {
+    background-color: #000; 
+    border: 2px solid #000;
+}
+
+.social-icon.lattes img {
+    background-color: #004c3f; 
+    border: 2px solid #004c3f;
+}
+
+.social-icon img:hover {
+    transform: translateY(-7px) scale(1.1); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
+    filter: brightness(1.2); 
+}
 
 
+/* -------------------------- LINKS -------------------------- */
+.links-list { 
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    gap: 18px; 
+    margin-bottom: 30px;
+}
 
-/* -------------------------- INICIO FOOTER  -------------------------- */
-
-
-footer {
-    position: absolute;
-    top: 93%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.link-button { 
+    display: block;
+    width: 100%; 
+    padding: 18px 20px; 
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.1em; 
+    border-radius: 12px; 
     text-align: center;
-    z-index: 2;
-    color: white;
-    font-size: 12px;
-    text-shadow: 2px 2px 1px #3d4c41;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+}
+
+.link-button:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); 
+}
+
+/* Estilos para botões principais e secundários, usando classes */
+.link-button { 
+    background-color: #f0f0f0; 
+    color: #333;
+}
+
+.link-button:hover {
+    background-color: #e0e0e0; 
+}
+
+.link-button.main-button { 
+    background-color: #4CAF50; 
+    color: #fff;
+    font-weight: 600;
+}
+
+.link-button.main-button:hover {
+    background-color: #45a049; 
+}
+
+.link-button.secondary-button { 
+    background-color: #3d4c41; 
+    color: #f0f0f0;
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+.link-button.secondary-button:hover {
+    background-color: #5a6b5e; 
+    color: #fff;
+}
 
 
+/* -------------------------- FOOTER -------------------------- */
+footer {
+    width: 100%;
+    text-align: center;
+    margin-top: auto; 
+    padding-top: 25px; 
+    border-top: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+footer p {
+    font-size: 0.85em; 
+    color: #cccccc;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 footer a {
     text-decoration: none;
-    color: white;
-    text-shadow: 2px 2px 1px #3d4c41;
-
-
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-/* -------------------------- FIM FOOTER --------------------------  */
+footer a:hover {
+    color: #4CAF50; 
+}
+
+
+/* -------------------------- RESPONSIVIDADE -------------------------- */
+@media (max-width: 480px) {
+    .main-container {
+        padding: 15px;
+        border-radius: 15px;
+        margin: 20px auto;
+        min-height: auto; 
+    }
+
+    /* Ajustes para mobile no cabeçalho usando Flexbox */
+    .avatar-section {
+        flex-direction: column; 
+        text-align: center; 
+        padding: 15px; 
+    }
+
+    .profile-pic {
+        margin-right: 0; 
+        margin-bottom: 10px; 
+        width: 80px; 
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 1.8em; 
+        padding-top: 0; 
+        margin-bottom: 5px; 
+    }
+
+    .subtitle {
+        font-size: 0.9em; 
+        line-height: 1.3;
+    }
+
+    .section-title {
+        font-size: 1.2em; 
+        padding: 20px 0 10px 0; 
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 10px;
+        padding: 10px; 
+    }
+
+    .skills-grid img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .social-links {
+        gap: 15px; 
+        margin-bottom: 20px;
+    }
+
+    .social-icon img {
+        width: 45px;
+        height: 45px;
+        padding: 6px;
+    }
+
+    .links-list {
+        gap: 12px; 
+        margin-bottom: 25px;
+    }
+
+    .link-button {
+        padding: 12px 15px;
+        font-size: 0.95em;
+        border-radius: 8px;
+    }
+
+    footer p {
+        font-size: 0.75em;
+    }
+}
+
+@media (max-height: 700px) {
+    .main-container {
+        margin: 20px auto; 
+        min-height: auto;
+    }
+}

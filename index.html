@@ -4,9 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/_css/style.css">
+    <link rel="stylesheet" href="./_css/style.css"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
     <title>Link</title>
 </head>
 
@@ -14,80 +19,68 @@
 
     <div id="particles-js"></div>
 
-    <section>
+    <section class="main-container">
         <main>
 
-            <div class="avatar">
-                <img src="/_img/1.jpeg" alt="">
-                <h1>Josué Serejo</h1>
-                <p>Futuro desenvolvedor web (Full Stack)</p>
-            </div>
-
-            <h4>Skills</h4>
-            <div class="skills">
-
-                <img src="/_img/skills/1.png" alt="simbolo instagram"></a>
-                <img src="/_img/skills/2.png" alt="simbolo instagram"></a>
-                <img src="/_img/skills/3.png" alt="simbolo instagram"></a>
-                <img src="/_img/skills/4.png" alt="simbolo instagram"></a>
-                <img src="/_img/skills/5.png" alt="simbolo instagram"></a>
-                <img src="/_img/skills/6.png" alt="simbolo instagram"></a>
-                <img src="/_img/skills/7.png" alt="simbolo instagram"></a>
-                <img src="/_img/skills/8.png" alt="simbolo instagram"></a>
+            <div class="avatar-section"> 
+                <img src="./_img/1.jpeg" alt="Foto de perfil de Josué Serejo" class="profile-pic"> 
+                <div class="name-subtitle">
+                    <h1>Josué Serejo</h1>
+                    <span class="subtitle-inline">Desenvolvedor web</span>
+                </div>
 
             </div>
+            <h4 class="section-title">Skills</h4>
+            <div class="skills-grid">
 
-
-            <div class="social">
-
-                <a id="rosa" href="https://www.instagram.com/prgrmnd/" target="_blank"><img src="/_img/logo/1.png"
-                        alt="simbolo instagram"></a>
-
-                <a id="azul" href="https://github.com/JosueSerejo" target="_blank"><img src="/_img/logo/2.png"
-                        alt="Github"></a>
-
-                <a id="rosa" href="https://www.tiktok.com/@11thdoctorx" target="_blank"><img src="/_img/logo/3.png"
-                        alt=""></a>
-
-                <a id="azul" href="http://lattes.cnpq.br/4869839517462543" target="_blank"><img src="/_img/logo/4.png"
-                        alt=""></a>
+                <img src="./_img/skills/1.png" alt="HTML5" title="HTML5">
+                <img src="./_img/skills/2.png" alt="CSS3" title="CSS3">
+                <img src="./_img/skills/3.png" alt="JavaScript" title="JavaScript">
+                <img src="./_img/skills/4.png" alt="React" title="React">
+                <img src="./_img/skills/5.png" alt="Node.js" title="Node.js">
+                <img src="./_img/skills/6.png" alt="Python" title="Python">
+                <img src="./_img/skills/7.png" alt="Git" title="Git">
+                <img src="./_img/skills/8.png" alt="SQL" title="SQL">
 
             </div>
 
+            <h4 class="section-title">Redes Sociais</h4>
+            <div class="social-links">
 
-            <div class="links">
-                <a id="verde" href="#" target="_blank">PORTFÓLIO</a>
-                <a class="publicado" href="#" target="_blank">TRABALHOS PUBLICADOS</a>
-                <a href="#" target="_blank">LINKED IN</a>
-                <a class="publicado" href="#" target="_blank">FALE COMIGO</a>
-              </div>
+                <a href="https://www.instagram.com/prgrmnd/" target="_blank" class="social-icon instagram" aria-label="Instagram">
+                    <img src="./_img/logo/1.png" alt="Logo do Instagram"></a>
 
+                <a href="https://github.com/JosueSerejo" target="_blank" class="social-icon github" aria-label="Github">
+                    <img src="./_img/logo/2.png" alt="Logo do Github"></a>
+
+                <a href="https://www.tiktok.com/@11thdoctorx" target="_blank" class="social-icon tiktok" aria-label="TikTok">
+                    <img src="./_img/logo/3.png" alt="Logo do TikTok"></a>
+
+                <a href="http://lattes.cnpq.br/4869839517462543" target="_blank" class="social-icon lattes" aria-label="Currículo Lattes">
+                    <img src="./_img/logo/4.png" alt="Logo do Lattes"></a>
 
             </div>
 
-
-            <footer>
-                <p>
-                    Desenvolvido por: <a href="https://www.instagram.com/prgrmnd/" target="_blank">Josué Serejo</a>
-                <p>
-
-            </footer>
+            <h4 class="section-title">Links Importantes</h4>
+            <div class="links-list">
+                <a href="#" target="_blank" class="link-button main-button">PORTFÓLIO</a>
+                <a href="#" target="_blank" class="link-button secondary-button">TRABALHOS PUBLICADOS</a>
+                <a href="https://www.linkedin.com/in/serejodev/" target="_blank" class="link-button">LINKED IN</a>
+                <a href="#" target="_blank" class="link-button secondary-button">FALE COMIGO</a>
+            </div>
 
         </main>
 
+        <footer>
+            <p>
+                Desenvolvido por: <a href="https://www.instagram.com/prgrmnd/" target="_blank">Josué Serejo</a>
+            <p>
+        </footer>
+    </section>
 
-
-
-        <!-- Script para particles.js -->
-        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-        <!-- Script para stats.js (opcional) -->
-        <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-        <!-- Configuração para particles.js -->
-        <script src="/particlesjs-config.json"></script>
-
-
-
-
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="./particlesjs-config.json"></script> 
 
 </body>
 
