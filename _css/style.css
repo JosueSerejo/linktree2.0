@@ -1,0 +1,245 @@
+/* -------------------------- GERAL -------------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(/_img/3.png);
+
+}
+
+/* -------------------------- GERAL -------------------------- */
+
+
+/* -------------------------- CONTEINER PRINCIPAL */
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    color: #eeeeee;
+    background-color: #2e362dad;
+    padding: 20px;
+    height: 600px;
+    width: 330px;
+    border-radius: 20px;
+
+}
+
+/* -------------------------- CONTEINER PRINCIPAL -------------------------- */
+
+
+/* --------------------------- AVATAR -------------------------- */
+
+.avatar {
+
+    background-color: #3d4c41;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+
+.avatar img {
+    border: 3px solid #eeeeee;
+    float: left;
+}
+
+.avatar p {
+    font-size: 12px;
+}
+
+
+
+h1 {
+
+    padding-top: 4%;
+    text-shadow: 2px 1px 1px #7d857ce1;
+
+
+}
+
+
+p {
+    line-height: 3vh;
+
+
+}
+
+
+main img {
+    width: 70px;
+    border-radius: 20%;
+
+
+}
+
+
+/* -------------------------- AVATAR -------------------------- */
+
+/* -------------------------- SKILLS -------------------------- */
+
+h4 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-shadow: 2px 2px 1px #3d4c41;
+
+
+}
+
+.skills {
+    background-color: #3d4c41;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.skills img {
+    width: 10%;
+
+}
+
+/* -------------------------- SKILLS -------------------------- */
+
+
+/* -------------------------- SOCIAL -------------------------- */
+
+.social {
+
+    margin-top: 10%;
+
+}
+
+
+
+.social a {
+    margin-right: 15px;
+    /* adiciona espaçamento à direita */
+}
+
+.social a:last-child {
+    margin-right: 0;
+    /* remove o espaçamento à direita do último elemento "a" */
+}
+
+
+#azul img {
+    width: 50px;
+    background-color: #eeeeee;
+    border: 3px solid #3d4c41;
+
+
+
+}
+
+#rosa img {
+    width: 50px;
+    background-color: #3d4c41;
+    border: 3px solid #eeeeee;
+
+}
+
+
+#azul img:hover {
+    background-color: #a4b9aa;
+    transition: 1s;
+}
+
+#rosa img:hover {
+    transition: 1s;
+    background-color: rgb(31, 37, 32);
+}
+
+
+/* -------------------------- SOCIAL -------------------------- */
+
+
+/* -------------------------- LINKS -------------------------- */
+
+.links {
+    width: 330px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .links a {
+    display: block;
+    height: 18px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0d0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 15px;
+  }
+  
+  .links a:hover {
+    background-color: #3d4c41bd;
+    color: #eeeeee;
+    transition: 1s;
+  }
+  
+  .links .publicado {
+    background-color: #3d4c41b2;
+    color: #eeeeee;
+  }
+  
+  .links .publicado:hover {
+    background-color: #eeeeeebd;
+    color: #3d4c41;
+    transition: 1s;
+  }
+
+
+
+/* -------------------------- LINKS -------------------------- */
+
+/* -------------------------- PARTICULAS DO FUNDO -------------------------- */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* Garante que as partículas estejam atrás dos botões */
+}
+
+/* -------------------------- PARTICULAS DO FUNDO -------------------------- */
+
+
+
+
+
+
+/* -------------------------- INICIO FOOTER  -------------------------- */
+
+
+footer {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    color: white;
+    font-size: 12px;
+    text-shadow: 2px 2px 1px #3d4c41;
+
+
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 1px #3d4c41;
+
+
+}
+
+/* -------------------------- FIM FOOTER --------------------------  */
