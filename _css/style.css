@@ -285,71 +285,70 @@ footer a:hover {
 
 /* -------------------------- RESPONSIVIDADE -------------------------- */
 @media (max-width: 480px) {
-  /* Cabeçalho */
+  /* Cabeçalho com avatar + nome ao lado (não empilhar) */
   .avatar-section {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row; /* lado a lado */
+    align-items: center;
+    justify-content: flex-start;
     padding: 10px 15px;
   }
   
   .profile-pic {
-    margin-right: 0;
-    margin-bottom: 12px;
-    width: 90px;
-    height: 90px;
-    border-radius: 30%;
-  }
-  
-  h1 {
-    font-size: 2em;
-    margin-bottom: 8px;
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+    margin-right: 12px;
   }
   
   .name-subtitle {
+    display: flex;
+    flex-direction: column; /* nome em cima, subtítulo embaixo */
     justify-content: center;
-    gap: 6px;
+    gap: 4px;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+    color: #fff;
   }
   
   .subtitle-inline {
-    font-size: 1em;
-    color: #bbb;
+    font-size: 0.9em;
+    color: #ccc;
   }
-
-  /* Skills */
+  
+  /* Skills grid com 4 colunas, tamanho menor */
   .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
     padding: 10px 0;
   }
   
   .skills-grid img {
-    width: 50px;
-    height: 50px;
-  }
-  
-  /* Social icons */
-  .social-links {
-    gap: 20px;
+    width: 40px;
+    height: 40px;
   }
 
+  /* Social icons um pouco menores */
   .social-icon img {
     width: 50px;
     height: 50px;
     padding: 6px;
   }
-  
+
   /* Links */
   .links-list {
     gap: 14px;
     margin-bottom: 25px;
   }
-  
+
   .link-button {
     padding: 14px 16px;
     font-size: 1em;
     border-radius: 10px;
   }
-  
+
   /* Footer */
   footer p {
     font-size: 0.75em;
