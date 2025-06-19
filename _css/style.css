@@ -51,10 +51,15 @@ body {
 
 .name-subtitle {
   display: flex;
-  align-items: center;
-  gap: 10px; /* espaço entre nome e subtítulo */
-  flex-wrap: wrap; /* quebra em telas pequenas */
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding-left: 10px;
+  text-align: center;
 }
+
+
+
 
 .subtitle-inline {
   font-family: 'Poppins', sans-serif;
@@ -62,6 +67,7 @@ body {
   color: #cccccc;
   font-weight: 400;
   margin: 0;
+  text-align: center;
 }
 
 /* --------------------------- AVATAR (CABEÇALHO AJUSTADO COM FLEXBOX) -------------------------- */
