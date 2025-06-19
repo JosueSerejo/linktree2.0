@@ -73,10 +73,10 @@ body {
 /* --------------------------- AVATAR (CABEÇALHO AJUSTADO COM FLEXBOX) -------------------------- */
 .avatar-section { 
     background-color: #3d4c41; 
-    padding: 15px 30px; /* mais padding lateral para expandir o fundo */
+    padding: 15px 30px; 
     border-radius: 20px;
     margin-bottom: 25px; 
-    width: 100%; /* para preencher toda largura do container */
+    width: 100%; 
     box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2); 
     display: flex; 
     align-items: center; 
@@ -134,12 +134,12 @@ h4 {
 /* -------------------------- SKILLS -------------------------- */
 .skills-grid { 
     background-color: rgba(61, 76, 65, 0.7); 
-    padding: 20px 30px; /* mais padding lateral para expandir o fundo */
+    padding: 20px 30px; 
     border-radius: 15px;
     display: grid; 
     grid-template-columns: repeat(4, 1fr); 
     gap: 20px; 
-    width: 100%; /* para preencher toda largura do container */
+    width: 100%; 
     margin-bottom: 25px;
 }
 
@@ -291,12 +291,11 @@ footer a:hover {
 
 /* -------------------------- RESPONSIVIDADE -------------------------- */
 @media (max-width: 480px) {
-  /* Cabeçalho com avatar + nome ao lado (não empilhar) */
   .avatar-section {
-    flex-direction: row; /* lado a lado */
+    flex-direction: row; 
     align-items: center;
     justify-content: flex-start;
-    padding: 10px 25px; /* padding lateral aumentado para fundo maior */
+    padding: 10px 25px; 
     width: 100%;
   }
   
@@ -309,7 +308,7 @@ footer a:hover {
   
   .name-subtitle {
     display: flex;
-    flex-direction: column; /* nome em cima, subtítulo embaixo */
+    flex-direction: column; 
     justify-content: center;
     gap: 4px;
   }
@@ -329,7 +328,7 @@ footer a:hover {
   .skills-grid {
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    padding: 10px 25px; /* padding lateral aumentado para fundo maior */
+    padding: 10px 25px;
     width: 100%;
   }
   
