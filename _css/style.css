@@ -31,20 +31,6 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
     color: var(--text-color);
-    position: relative;
-    z-index: 1;
-}
-
-#background-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1; /* Coloca o vídeo atrás de todo o conteúdo */
-    background-size: cover;
 }
 
 .content {
